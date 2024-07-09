@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Slade</title>
+        <link rel="stylesheet" href="pink.css">
+    </head>
+    <body>
+        <script>
+            function showpass(){
+                var x =
+                document.getElementById("eye");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else{
+                    x.type = "password";
+                }
+            }
+        </script>
+        <div class="larger">
+            <form class="filler">
+                <div class="header">
+                    <img src="logo.png" class="first" alt="">
+                <img src="cart.png" alt="" class="second">
+            </div>
+            <div>
+                <p class="welcome">welcome back to <span class="color">Orga Farm</span></p>
+                <p class="Log">Login</p>
+            </div>
+            <div class="input">
+                <input type="email" class="email" placeholder="Email">
+                <br>
+                <div>
+                <input {showpass? text: !password} class='pass' type="password" id="eye" name="password" placeholder="Password">
+                <img src="Reveal.png" alt="" class="rev" onclick="showpass()" >
+            </div>
+            </div>
+            <div class="forge">
+                <input type="checkbox">
+                <label>Remember me</label>
+                <a href="" class="lint">Forgot Password?</a>
+            </div>
+            <button>Login</button>
+            <footer>Don't have an account yet? <span class="color">Get started</span></footer>
+            </form>
+            <aside class="pic">
+                <p class="Save">"Save the planet....Buy Organic"<br> - Nancy Philips</p>
+            </aside>
+        </div>
+    </body>
+</html>
